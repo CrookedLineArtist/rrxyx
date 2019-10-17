@@ -1,0 +1,1 @@
+pug dev --out ./ -w -P
