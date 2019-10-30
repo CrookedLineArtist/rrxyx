@@ -1,0 +1,114 @@
+
+
+// nav
+nav {
+    width: 100%;
+  
+    position: fixed;
+    top: 0;
+    z-index: 4;
+
+  
+        
+    background-color: rgba(255, 255, 255, 0.961);
+    border-radius: 5px;
+
+
+  
+    .container {
+  
+      display: flex;
+      justify-content: space-between;
+  
+      svg {
+        width: 40vmin;
+        padding: 30px;
+      }
+  
+    }
+  
+  
+    
+    .nav-item {
+      // background-color: #F52D01;
+      // height: 100vh;
+      // min-width: 300px;
+      // position: fixed;
+      // z-index: 1;
+      // top: 0;
+      // right: 0;
+      // overflow-x: hidden;
+      // transition: 0.5s;
+  
+      ul {
+        padding: 30px 30px 0px 30px;
+        list-style-type: none;
+        text-align: right; 
+  
+        a {
+          text-decoration: none;
+          
+          /* no underline */
+          color: black;
+  
+  
+        }
+  
+  
+        li {
+          font-family: 'Barlow Semi Condensed', sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          font-size: small ;
+          // color: whitesmoke;
+          padding: 0 25px;
+          display: inline-block;
+          background-color: transparent;
+          transition: font-weight 0.2s ease-in;
+          &:hover{
+            font-weight: 600;
+            
+          }
+  
+          &:hover::before {
+            content: ' ';
+            position: absolute;
+            background-color: #F52D01;
+            margin-left: -15px;
+            width: 3px;
+            height: 18px;
+            border-radius: 20px 0;
+  
+            
+  
+  
+  
+          }
+  
+          &:last-child {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes color-bounce {
+    0%   {fill:rgb(144, 21, 196);}
+    25%  {fill:rgb(196, 21, 21);}
+    50%  {fill:rgb(21, 155, 196);}
+    100% {fill:rgb(21, 196, 120);}
+  }
+  
+  .logo{
+      svg{
+        animation-name: color-bounce;
+        animation-duration: 4s;
+
+        transition: fill 4s ease-out ;
+        animation-iteration-count: infinite;
+          
+
+
+      }
+  }
