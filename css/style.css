@@ -1,3 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,300i,400,400i,600,600i|Barlow:300,300i,600,600i&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+body,
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.1em;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-family: 'Barlow', sans-serif;
+  max-width: 440px;
+  line-height: 1.4em;
+  margin-bottom: 1.4em;
+}
+
+h2 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 33px;
+  max-width: 600px;
+  margin: 1em 0;
+  letter-spacing: 0.1em;
+}
+
+h3 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 1.2em;
+}
+
+h4 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 200;
+}
+
 nav {
   width: 100%;
   position: fixed;
@@ -34,7 +79,7 @@ nav .nav-item ul a {
 }
 
 nav .nav-item ul li {
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: small;
