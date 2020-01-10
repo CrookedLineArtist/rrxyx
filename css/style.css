@@ -45,9 +45,7 @@ h4 {
 
 nav {
   width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 4;
+  margin-bottom: 200px;
   background-color: rgba(255, 255, 255, 0.961);
   border-radius: 5px;
 }
@@ -143,19 +141,20 @@ nav .nav-item ul li:last-child {
           animation-name: color-bounce;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
-  -webkit-transition: fill 4s ease-out;
-  transition: fill 4s ease-out;
+  -webkit-transition: fill 2s ease-out;
+  transition: fill 2s ease-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
 
 .product {
   width: 100vw;
+  text-align: center;
 }
 
 .product img {
+  border-radius: 5px;
   width: 90%;
-  margin-top: 200px;
-  padding: 1em;
+  max-width: 400px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -57,10 +57,14 @@ h4 {
 // nav
 nav {
     width: 100%;
+
+    margin-bottom: 200px;
+
+
   
-    position: fixed;
-    top: 0;
-    z-index: 4;
+    // position: fixed;
+    // top: 0;
+    // z-index: 4;
 
   
         
@@ -159,16 +163,19 @@ nav {
         animation-name: color-bounce;
         animation-duration: 4s;
 
-        transition: fill 4s ease-out ;
+        transition: fill 2s ease-out ;
         animation-iteration-count: infinite;
       }
   }
 
   .product{
         width: 100vw;
+        text-align: center;
+
       img{
+          
+        border-radius: 5px;
         width: 90%;
-          margin-top: 200px;
-          padding: 1em;
+        max-width: 400px;          
       }
   }
