@@ -1,184 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,300i,400,400i,600,600i|Barlow:300,300i,600,600i&display=swap');
+$font-family-brand: 'Misto';
+$font-family: 'Montserrat', sans-serif;
 
-
-
-$font-family: 'Barlow Semi Condensed', sans-serif;
 // root
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-  //border: 1px grey solid;
-  transition: all 1s ease;
+
 
 }
 
 body,
 html {
   box-sizing: border-box;
-  font-size: 1.1em;
   scroll-behavior: smooth;
-  font-family: 'Misto';
+  font-size: 1.4em;
+}
 
-  
+h1 {
+  font-family: $font-family-brand;
+  padding: 1em;
+  letter-spacing: 2px;
 
 }
 
-
 p {
-  font-family: 'Barlow', sans-serif;
-  max-width: 440px;
-  line-height: 1.4em;
-  margin-bottom: 1.4em;
+  font-family: $font-family;
+
+
 }
 
 h2 {
   font-family: $font-family;
-  text-transform: uppercase;
-  font-size: 33px;
-  max-width: 600px;
-  margin: 1em 0;
+  font-weight: 200;
   letter-spacing: 0.1em;
+  
 }
 
 h3 {
   font-family: $font-family;
-  text-transform: capitalize;
-  margin-bottom: 1.2em;
-
 }
 
 h4 {
   font-family: $font-family;
-  font-size: 200;
+  font-size: 100;
+  letter-spacing: 0.1em;
 }
+
+h5 {
+  font-family: $font-family;
+  font-size: 100;
+  letter-spacing: 0.2em;
+}
+
+h6 {
+  font-family: $font-family;
+  font-size: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+}
+
 
 
 
 // nav
 nav {
-    width: 100%;
+  width: 100%;
 
-    margin-bottom: 200px;
+  margin-bottom: 200px;
+  // position: fixed;
+  // top: 0;
+  // z-index: 4;
+
+  background-color: rgba(255, 255, 255, 0.961);
+  border-radius: 5px;
 
 
-  
+
+  .container {
+
+    display: flex;
+    justify-content: space-between;
+
+    svg {
+      width: 40vmin;
+      padding: 30px;
+    }
+
+  }
+
+
+
+  .nav-item {
+    // background-color: #F52D01;
+    // height: 100vh;
+    // min-width: 300px;
     // position: fixed;
+    // z-index: 1;
     // top: 0;
-    // z-index: 4;
+    // right: 0;
+    // overflow-x: hidden;
+    // transition: 0.5s;
 
-  
-        
-    background-color: rgba(255, 255, 255, 0.961);
+    ul {
+      padding: 30px 30px 0px 30px;
+      list-style-type: none;
+      text-align: right;
+
+      a {
+        text-decoration: none;
+
+        /* no underline */
+        color: black;
+
+
+      }
+
+
+      li {
+        font-family: $font-family;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: small;
+        // color: whitesmoke;
+        padding: 0 25px;
+        display: inline-block;
+        background-color: transparent;
+        transition: font-weight 0.2s ease-in;
+
+        &:hover {
+          font-weight: 600;
+
+        }
+
+        &:hover::before {
+          content: ' ';
+          position: absolute;
+          background-color: #F52D01;
+          margin-left: -15px;
+          width: 3px;
+          height: 18px;
+          border-radius: 20px 0;
+
+
+
+
+
+        }
+
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@keyframes color-bounce {
+  0% {
+    fill: rgb(144, 21, 196);
+  }
+
+  25% {
+    fill: rgb(196, 21, 21);
+  }
+
+  50% {
+    fill: rgb(21, 155, 196);
+  }
+
+  100% {
+    fill: rgb(21, 196, 120);
+  }
+}
+
+.logo {
+  svg {
+    animation-name: color-bounce;
+    animation-duration: 4s;
+
+    transition: fill 2s ease-out;
+    animation-iteration-count: infinite;
+  }
+}
+
+.product {
+  width: 100vw;
+  text-align: center;
+
+  img {
+
     border-radius: 5px;
-
-
-  
-    .container {
-  
-      display: flex;
-      justify-content: space-between;
-  
-      svg {
-        width: 40vmin;
-        padding: 30px;
-      }
-  
-    }
-  
-  
-    
-    .nav-item {
-      // background-color: #F52D01;
-      // height: 100vh;
-      // min-width: 300px;
-      // position: fixed;
-      // z-index: 1;
-      // top: 0;
-      // right: 0;
-      // overflow-x: hidden;
-      // transition: 0.5s;
-  
-      ul {
-        padding: 30px 30px 0px 30px;
-        list-style-type: none;
-        text-align: right; 
-  
-        a {
-          text-decoration: none;
-          
-          /* no underline */
-          color: black;
-  
-  
-        }
-  
-  
-        li {
-          font-family: $font-family;
-          text-transform: uppercase;
-          letter-spacing: 0.1em;
-          font-size: small ;
-          // color: whitesmoke;
-          padding: 0 25px;
-          display: inline-block;
-          background-color: transparent;
-          transition: font-weight 0.2s ease-in;
-          &:hover{
-            font-weight: 600;
-            
-          }
-  
-          &:hover::before {
-            content: ' ';
-            position: absolute;
-            background-color: #F52D01;
-            margin-left: -15px;
-            width: 3px;
-            height: 18px;
-            border-radius: 20px 0;
-  
-            
-  
-  
-  
-          }
-  
-          &:last-child {
-            display: none;
-          }
-        }
-      }
-    }
+    width: 90%;
+    max-width: 400px;
   }
-
-  @keyframes color-bounce {
-    0%   {fill:rgb(144, 21, 196);}
-    25%  {fill:rgb(196, 21, 21);}
-    50%  {fill:rgb(21, 155, 196);}
-    100% {fill:rgb(21, 196, 120);}
-  }
-  
-  .logo{
-      svg{
-        animation-name: color-bounce;
-        animation-duration: 4s;
-
-        transition: fill 2s ease-out ;
-        animation-iteration-count: infinite;
-      }
-  }
-
-  .product{
-        width: 100vw;
-        text-align: center;
-
-      img{
-          
-        border-radius: 5px;
-        width: 90%;
-        max-width: 400px;          
-      }
-  }
+}

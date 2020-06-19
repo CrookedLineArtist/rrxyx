@@ -1,47 +1,56 @@
-@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,300i,400,400i,600,600i|Barlow:300,300i,600,600i&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,900&display=swap");
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
 }
 
 body,
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 1.1em;
   scroll-behavior: smooth;
-  font-family: 'Misto';
+  font-size: 1.4em;
+}
+
+h1 {
+  font-family: "Misto";
+  padding: 1em;
+  letter-spacing: 2px;
 }
 
 p {
-  font-family: 'Barlow', sans-serif;
-  max-width: 440px;
-  line-height: 1.4em;
-  margin-bottom: 1.4em;
+  font-family: "Montserrat", sans-serif;
 }
 
 h2 {
-  font-family: "Barlow Semi Condensed", sans-serif;
-  text-transform: uppercase;
-  font-size: 33px;
-  max-width: 600px;
-  margin: 1em 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
   letter-spacing: 0.1em;
 }
 
 h3 {
-  font-family: "Barlow Semi Condensed", sans-serif;
-  text-transform: capitalize;
-  margin-bottom: 1.2em;
+  font-family: "Montserrat", sans-serif;
 }
 
 h4 {
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-size: 200;
+  font-family: "Montserrat", sans-serif;
+  font-size: 100;
+  letter-spacing: 0.1em;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 100;
+  letter-spacing: 0.2em;
+}
+
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
 }
 
 nav {
@@ -78,7 +87,7 @@ nav .nav-item ul a {
 }
 
 nav .nav-item ul li {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: small;
