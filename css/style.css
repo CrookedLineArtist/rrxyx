@@ -12,12 +12,19 @@ html {
           box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 1.4em;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: black;
 }
 
 h1 {
   font-family: "Misto";
   padding: 1em;
   letter-spacing: 2px;
+  text-align: center;
+  font-size: 26px;
+  color: grey;
 }
 
 p {
@@ -28,10 +35,13 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
   letter-spacing: 0.1em;
+  color: #525252;
 }
 
 h3 {
   font-family: "Montserrat", sans-serif;
+  color: #525252;
+  font-weight: 200;
 }
 
 h4 {
@@ -44,6 +54,8 @@ h5 {
   font-family: "Montserrat", sans-serif;
   font-size: 100;
   letter-spacing: 0.2em;
+  color: #525252;
+  font-weight: 200;
 }
 
 h6 {
@@ -118,43 +130,40 @@ nav .nav-item ul li:last-child {
 
 @-webkit-keyframes color-bounce {
   0% {
-    fill: #9015c4;
+    color: #9015c4;
   }
   25% {
-    fill: #c41515;
+    color: #c41515;
   }
   50% {
-    fill: #159bc4;
+    color: #159bc4;
   }
   100% {
-    fill: #15c478;
+    color: #15c478;
   }
 }
 
 @keyframes color-bounce {
   0% {
-    fill: #9015c4;
+    color: #9015c4;
   }
   25% {
-    fill: #c41515;
+    color: #c41515;
   }
   50% {
-    fill: #159bc4;
+    color: #159bc4;
   }
   100% {
-    fill: #15c478;
+    color: #15c478;
   }
 }
 
-.logo svg {
-  -webkit-animation-name: color-bounce;
-          animation-name: color-bounce;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-transition: fill 2s ease-out;
-  transition: fill 2s ease-out;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+.logo {
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  text-align: center;
 }
 
 .product {
@@ -166,5 +175,31 @@ nav .nav-item ul li:last-child {
   border-radius: 5px;
   width: 90%;
   max-width: 400px;
+}
+
+.star {
+  width: 100vw;
+  height: 100vh;
+}
+
+.welcome {
+  position: fixed;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  width: 300px;
+  text-align: center;
+}
+
+.welcome h5 {
+  -webkit-animation-name: color-bounce;
+          animation-name: color-bounce;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-transition: fill 2s ease-out;
+  transition: fill 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 /*# sourceMappingURL=style.css.map */

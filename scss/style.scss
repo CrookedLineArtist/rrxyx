@@ -18,15 +18,24 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-size: 1.4em;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: black;
+  
+  
 }
 
 h1 {
   font-family: $font-family-brand;
   padding: 1em;
   letter-spacing: 2px;
+  text-align: center;
+  font-size: 26px;
+  color: grey;
+
 
 }
-
 p {
   font-family: $font-family;
 
@@ -37,11 +46,14 @@ h2 {
   font-family: $font-family;
   font-weight: 200;
   letter-spacing: 0.1em;
+  color: rgb(82, 82, 82);
+
   
 }
-
 h3 {
   font-family: $font-family;
+  color: rgb(82, 82, 82);
+  font-weight: 200;
 }
 
 h4 {
@@ -54,6 +66,8 @@ h5 {
   font-family: $font-family;
   font-size: 100;
   letter-spacing: 0.2em;
+  color: rgb(82, 82, 82);
+  font-weight: 200;
 }
 
 h6 {
@@ -161,30 +175,30 @@ nav {
 
 @keyframes color-bounce {
   0% {
-    fill: rgb(144, 21, 196);
+    color: rgb(144, 21, 196);
   }
 
   25% {
-    fill: rgb(196, 21, 21);
+    color: rgb(196, 21, 21);
   }
 
   50% {
-    fill: rgb(21, 155, 196);
+    color: rgb(21, 155, 196);
   }
 
   100% {
-    fill: rgb(21, 196, 120);
+    color: rgb(21, 196, 120);
   }
 }
 
 .logo {
-  svg {
-    animation-name: color-bounce;
-    animation-duration: 4s;
 
-    transition: fill 2s ease-out;
-    animation-iteration-count: infinite;
-  }
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  text-align: center;
+
 }
 
 .product {
@@ -197,4 +211,27 @@ nav {
     width: 90%;
     max-width: 400px;
   }
+}
+
+.star{
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.welcome{
+  position: fixed;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%,50%);
+  width: 300px;
+  text-align: center;
+  h5{
+    animation-name: color-bounce;
+    animation-duration: 4s;
+  
+    transition: fill 2s ease-out;
+    animation-iteration-count: infinite;
+  }
+
 }
