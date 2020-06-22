@@ -75,6 +75,8 @@ h6 {
   font-size: 100;
   text-transform: uppercase;
   letter-spacing: 0.4em;
+  font-weight: 200;
+ 
 }
 
 
@@ -175,19 +177,19 @@ nav {
 
 @keyframes color-bounce {
   0% {
-    color: rgb(144, 21, 196);
+    color: rgb(192, 93, 184);
   }
 
   25% {
-    color: rgb(196, 21, 21);
+    color: rgb(93, 168, 192);
   }
 
   50% {
-    color: rgb(21, 155, 196);
+    color:#C05F5D;
   }
 
   100% {
-    color: rgb(21, 196, 120);
+    color: #A6C05D;
   }
 }
 
@@ -198,6 +200,14 @@ nav {
   right: 0%;
   bottom: 0%;
   text-align: center;
+
+  h6{
+    animation-name: color-bounce;
+    animation-duration: 4s;
+  
+    transition: fill 2s ease-out;
+    animation-iteration-count: infinite;
+  }
 
 }
 
@@ -226,11 +236,41 @@ nav {
   transform: translate(-50%,50%);
   width: 300px;
   text-align: center;
-  h5{
-    animation-name: color-bounce;
-    animation-duration: 4s;
+
+
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.planet{
+  position: fixed;
+  right: 0;
+  top: 20px;
+  svg{
+    animation-name: rotate;
+    animation-duration: 100s;
   
-    transition: fill 2s ease-out;
+    transition: rotate 5s ease-in-out;
     animation-iteration-count: infinite;
   }
 

@@ -63,6 +63,7 @@ h6 {
   font-size: 100;
   text-transform: uppercase;
   letter-spacing: 0.4em;
+  font-weight: 200;
 }
 
 nav {
@@ -130,31 +131,31 @@ nav .nav-item ul li:last-child {
 
 @-webkit-keyframes color-bounce {
   0% {
-    color: #9015c4;
+    color: #c05db8;
   }
   25% {
-    color: #c41515;
+    color: #5da8c0;
   }
   50% {
-    color: #159bc4;
+    color: #C05F5D;
   }
   100% {
-    color: #15c478;
+    color: #A6C05D;
   }
 }
 
 @keyframes color-bounce {
   0% {
-    color: #9015c4;
+    color: #c05db8;
   }
   25% {
-    color: #c41515;
+    color: #5da8c0;
   }
   50% {
-    color: #159bc4;
+    color: #C05F5D;
   }
   100% {
-    color: #15c478;
+    color: #A6C05D;
   }
 }
 
@@ -164,6 +165,17 @@ nav .nav-item ul li:last-child {
   right: 0%;
   bottom: 0%;
   text-align: center;
+}
+
+.logo h6 {
+  -webkit-animation-name: color-bounce;
+          animation-name: color-bounce;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-transition: fill 2s ease-out;
+  transition: fill 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 .product {
@@ -192,13 +204,65 @@ nav .nav-item ul li:last-child {
   text-align: center;
 }
 
-.welcome h5 {
-  -webkit-animation-name: color-bounce;
-          animation-name: color-bounce;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-transition: fill 2s ease-out;
-  transition: fill 2s ease-out;
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.planet {
+  position: fixed;
+  right: 0;
+  top: 20px;
+}
+
+.planet svg {
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 100s;
+          animation-duration: 100s;
+  -webkit-transition: rotate 5s ease-in-out;
+  transition: rotate 5s ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
