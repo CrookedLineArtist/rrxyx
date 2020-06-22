@@ -178,6 +178,11 @@ nav .nav-item ul li:last-child {
           animation-iteration-count: infinite;
 }
 
+.logo img {
+  width: 150px;
+  padding: 10px 0px 50px;
+}
+
 .product {
   width: 100vw;
   text-align: center;
