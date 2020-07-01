@@ -21,10 +21,14 @@ html {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-color: black;
-  
+
+ 
+}
+body{
+  background-image: url('../img/rolling rockect website.jpg');
   
 }
+
 
 h1 {
   font-family: $font-family-brand;
@@ -198,7 +202,7 @@ nav {
   position: fixed;
   left: 0%;
   right: 0%;
-  bottom: 0%;
+  bottom: 10%;
   text-align: center;
 
   h6{
