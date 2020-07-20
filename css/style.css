@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  background-image: url("../img/rolling rockect website.jpg");
+  background-color: #151515;
 }
 
 h1 {
@@ -273,5 +273,29 @@ nav .nav-item ul li:last-child {
   transition: rotate 5s ease-in-out;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+}
+
+.warning {
+  position: relative;
+  background-color: #ab7070bd;
+  background: url(../img/texture/paper.jpg) no-repeat top center;
+  background-size: cover;
+  color: #fff;
+  cursor: pointer;
+}
+
+.warning h1 {
+  font-size: 10vw;
+  text-align: left;
+  padding: 0;
+}
+
+.warning-text {
+  background-color: red;
+  position: fixed;
+  font-size: 1vmax;
+  color: rgba(184, 184, 184, 0.927);
+  position: absolute;
+  width: 100vw;
 }
 /*# sourceMappingURL=style.css.map */
